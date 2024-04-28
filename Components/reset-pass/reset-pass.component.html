@@ -1,0 +1,36 @@
+  <!-- <div class="img">
+  <div class="container w-100 d-flex p-3 m-2">
+    <form [formGroup]="resetForm" (ngSubmit)="reset()">
+      <h1>Forgot Your Password ?</h1><br>
+      <h5>Don't Worry , We Got you.</h5><br>
+      <input type="Email" required placeholder="Confirm Your Email" class=" form-control mb-1" formControlName ="email">
+      <div *ngIf="resetForm.get('email')?.touched && resetForm.get('password')?.status == 'INVALID'" class=" alert alert-danger w-100">
+        <p *ngIf="resetForm.get('email')?.getError('required')">Password is Required</p>
+      </div>
+        <a href="\Forget" class=" btn btn-primary ">Next</a>
+    </form>
+  </div>
+  </div>
+-->
+
+
+<div class="container ">
+  <div class="item">
+  <div class="contact">
+    <img src="../../../assets/Images/6310507.jpg" alt="" class="image">
+  </div>
+  <div class="submit-form">
+      <form [formGroup]="resetForm" (ngSubmit)="reset()">
+        <div class="form-group">
+          <h1>Forgot Your Password ?</h1><br>
+      <h5>Don't Worry , We Got you.</h5><br>
+          <input type="Email" required placeholder="Confirm Your Email" class=" form-control mb-1" formControlName ="email">
+      <div *ngIf="resetForm.get('email')?.touched && resetForm.get('password')?.status == 'INVALID'" class=" alert alert-danger w-100">
+        <p *ngIf="resetForm.get('email')?.getError('required')">Email is Required</p>
+      </div>
+        </div>
+        <a href="\ValidCode" class=" btn btn-primary ">Next</a>
+      </form>
+  </div>
+  </div>
+</div>
